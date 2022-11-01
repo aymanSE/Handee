@@ -177,7 +177,7 @@ namespace Handee.Controllers
                      string email=  HttpContext.Session.GetString("email");
                      MailMessage mail = new MailMessage();
                      SmtpClient SmtpServer = new SmtpClient("smtp-mail.outlook.com", 587);
-                     mail.From = new MailAddress("***");
+                     mail.From = new MailAddress("");
                      mail.To.Add(email);
                      mail.Subject = "Purchase Invoice";
                  mail.Body = "Ayman";
